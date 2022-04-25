@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>NewFashion</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <section id="wrapper">
+
+            <header>
+                <nav class="menu">
+                    <ul class="active">
+                        <li><a href="#">My profile</a></li>
+                        <li><a href="layout4.html">My Community</a></li>
+                        <li><a href="#">Donation</a></li>
+                        <li><a href="#">Store nearby</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">Log out</a></li>
+                    </ul>
+                    
+                    <a class="toggle-nav" href="#">&#9776;</a>
+                </nav>
+                
+                <a href="index.html" id="logo"> </a>
+                
+                <h4>Hi, Kim</h4>
+                <img src="images/persona-kim.jpg" alt="persona-kim">
+            </header>
+            
+            <form name="newFashionform" action="form.php" method="GET">
+
+                <section class="form_title">
+                <label>
+                    The name of the outfit:
+                    <input type="text" name="form_title" style="height:24px; width:187px">
+                </label> 
+            </section>
+
+                <section class="main_form">
+                    <img src="images/step_dress.jpg" alt="#">
+
+                    <section class="required">
+                        <label>The required products:</label>
+                        <input style="height:24px; width:187px" type="text" name="required">
+                    </section>
+
+                    <section class="design">
+
+                        <label>Item design time:</label>
+
+                        <input style="height:24px; width:187px" type="time" name="design">
+
+                    </section>
+
+                    <section class="number_steps">
+
+                        <label>The number of steps:</label>
+                        <input style="height:24px; width:187px" type="number" name="number_steps">
+
+                    </section>
+
+                    <section class="difficulty">
+
+
+                        <label>Difficulty:
+
+                            <select name="difficulty" style="height:22px; width: 55px;">
+
+                                <option value="1">1</option>
+
+                                <option value="2">2</option>
+
+                                <option value="3">3</option>
+
+
+                            </select>
+
+                        </label><br>
+
+                    </section>
+
+                </section>
+
+                <h2 class="form_steps_title">The steps to upgrade the garment:</h2>
+                <section class="basis_steps">
+
+
+                    <section class="form_step1">
+                        <label>
+                            Step 1:
+                            <input style="height:80px; width:254px" type="text" name="form_step1">
+
+                        </label>
+                    </section>
+
+                    <section>
+                        <img id="plus-img" src="images/plus-button.png" alt="form_step1_image">
+                    </section>
+
+                </section>
+
+
+                <section class="basis_steps_form">
+                    <section class="form_step2">
+                        <label>
+                            Step 2:
+                            <input style="height:80px; width:254px" type="text" name="form_step2">
+                        </label>
+                    </section>
+
+                    <section>
+
+                        <img id="plus-img2" src="images/plus-button.png" alt="form_step2_image">
+                        
+                    </section>
+                </section>
+
+
+                <button class="button_form" type="button"><b>Additional steps</b></button>
+                <input id="submit-button" type="submit" value="Send">
+            </form>
+
+            <nav class="nav_main">
+                <a href="#"><img src="images/search.png" alt="search"></a>
+                <a href="index.html"><img src="images/home.png" alt="home"></a>
+                <a href="#"><img src="images/camera.png" alt="camera"></a>
+            </nav>
+
+        </section>
+        <script src="js/scripts.js"></script>
+    </body>
+
+</html>
